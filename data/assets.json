@@ -1,0 +1,7 @@
+{
+  "WS-FIN-021": {"owner": "finance", "criticality": "high", "os": "Windows 11", "edr": "enabled"},
+  "WS-ENG-104": {"owner": "engineering", "criticality": "medium", "os": "Windows 11", "edr": "enabled"},
+  "SRV-WEB-01": {"owner": "it-ops", "criticality": "high", "os": "Ubuntu 24.04", "edr": "enabled"},
+  "SRV-SCAN-01": {"owner": "security", "criticality": "medium", "os": "Ubuntu 24.04", "edr": "enabled", "role": "authorised vulnerability scanner"},
+  "VPN-GW-01": {"owner": "it-ops", "criticality": "high", "os": "appliance", "edr": "n/a"}
+}

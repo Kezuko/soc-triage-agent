@@ -1,0 +1,21 @@
+{
+  "ips": {
+    "185.220.101.45": {"reputation": "malicious", "source": "Tor exit / brute-force feed", "first_seen": "2026-08-02"},
+    "45.155.205.233": {"reputation": "malicious", "source": "C2 tracker", "first_seen": "2026-09-14"},
+    "91.240.118.172": {"reputation": "suspicious", "source": "scanner feed", "first_seen": "2026-10-01"},
+    "10.20.0.15": {"reputation": "internal", "source": "asset inventory", "first_seen": null},
+    "8.8.8.8": {"reputation": "benign", "source": "public DNS", "first_seen": null},
+    "52.96.0.10": {"reputation": "benign", "source": "Microsoft 365 range", "first_seen": null}
+  },
+  "domains": {
+    "cdn-update-sync.top": {"reputation": "malicious", "source": "loader distribution feed", "first_seen": "2026-10-10"},
+    "login-micros0ft-secure.com": {"reputation": "malicious", "source": "phishing feed", "first_seen": "2026-10-12"},
+    "windowsupdate.com": {"reputation": "benign", "source": "vendor", "first_seen": null},
+    "github.com": {"reputation": "benign", "source": "vendor", "first_seen": null}
+  },
+  "hashes": {
+    "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855": {"reputation": "benign", "source": "empty file", "family": null},
+    "5f2b7a1c9d0e4b8a6c3f1e2d7a9b0c4e8f6a2d1b3c5e7f9a0b2c4d6e8f0a1b3c": {"reputation": "malicious", "source": "sandbox report", "family": "AsyncRAT"},
+    "9a8b7c6d5e4f3a2b1c0d9e8f7a6b5c4d3e2f1a0b9c8d7e6f5a4b3c2d1e0f9a8b": {"reputation": "unknown", "source": null, "family": null}
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "acme": {
+    "exceptions": [
+      {"field": "src_host", "value": "SRV-SCAN-01", "reason": "Authorised weekly vulnerability scan", "expires": "2027-06-30"}
+    ],
+    "never_block": ["8.8.8.8", "10.20.0.15", "52.96.0.10"],
+    "auto_close_fp_min_confidence": 0.9
+  },
+  "globex": {
+    "exceptions": [],
+    "never_block": ["8.8.8.8"],
+    "auto_close_fp_min_confidence": 0.95
+  }
+}
