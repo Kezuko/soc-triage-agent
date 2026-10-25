@@ -136,3 +136,10 @@ def test_scoring_counts_missed_malicious():
     ]
     m = score(rows, preds)
     assert m["missed_malicious"] == 1 and m["fp_auto_closed"] == 1.0 and m["ambiguous_escalated"] == "1/1"
+
+
+def test_report_is_plain_ascii_for_windows_consoles_and_files():
+    from evals.run_eval import report_md
+    preds = [{"alert_id": "A", "label": "true_positive", "verdict": "false_positive",
+              "confidence": 0.9, "guardrails_fired": []}]
+    report_md("m", {"alerts": 1}, preds).encode("cp1252")
